@@ -88,7 +88,7 @@ nav.scrolled{background:rgba(46,15,71,0.92);backdrop-filter:blur(16px)}
 .photo-circle{width:280px;height:280px;border-radius:50%;overflow:hidden;border:3px solid var(--p3);background:linear-gradient(135deg,var(--p2),var(--p1));display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 20px 60px rgba(46,15,71,.25)}
 .photo-initials{font-family:var(--fs);font-size:5rem;font-weight:700;font-style:italic;color:rgba(232,216,242,.8);letter-spacing:.05em}
 
-/* Replace initials with actual photo — just add your photo URL below */
+/* PHOTO LOAD: Points to 'myphoto.jpg.jpeg' */
 .photo-circle img{
   width:100%;
   height:100%;
@@ -137,7 +137,6 @@ nav.scrolled{background:rgba(46,15,71,0.92);backdrop-filter:blur(16px)}
 /* ═══ PROJECTS ═══ */
 #projects{background:var(--p4)}
 
-/* card flip animation */
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .proj-card{background:var(--white);padding:2.2rem;border:1px solid rgba(168,143,191,.2);position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s;transform:translateY(0)}
 .proj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--p2),var(--p3));transform:scaleX(0);transform-origin:left;transition:transform .35s}
@@ -169,7 +168,7 @@ nav.scrolled{background:rgba(46,15,71,0.92);backdrop-filter:blur(16px)}
 
 /* ═══ RESUME SECTION ═══ */
 #resume{background:linear-gradient(135deg,var(--p2),var(--p1));padding:8rem 4rem;text-align:center}
-.res-label{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--p3);margin-bottom:1.5rem}
+.res-label reveal{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--p3);margin-bottom:1.5rem}
 .res-title{font-family:var(--fs);font-size:clamp(2rem,5vw,4rem);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
 .res-title em{font-style:italic;color:var(--p3)}
 .res-sub{font-size:.85rem;color:rgba(232,216,242,.7);max-width:500px;margin:0 auto 3rem;line-height:1.8}
@@ -181,6 +180,8 @@ nav.scrolled{background:rgba(46,15,71,0.92);backdrop-filter:blur(16px)}
 .resume-meta p{font-size:.72rem;color:var(--p3);letter-spacing:.1em}
 .resume-meta span{font-size:.65rem;color:rgba(232,216,242,.5)}
 .resume-actions{display:flex;gap:1rem;justify-content:center}
+
+/* UPDATED RESUME PATH: Points to SHRUTI_AK_36.pdf */
 .btn-download{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fb);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:1rem 2.5rem;background:var(--p4);color:var(--p1);transition:all .25s;cursor:none;font-weight:600}
 .btn-download:hover{background:var(--white);transform:translateY(-2px)}
 .btn-view{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fb);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:1rem 2.5rem;border:1px solid rgba(232,216,242,.3);color:var(--p4);transition:all .25s;cursor:none}
@@ -259,8 +260,8 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
   <div class="orb orb2"></div>
   <div class="orb orb3"></div>
 
-  <p class="hero-sub">ECE Student · MCET · Batch 2027</p>
-  <h1 class="hero-name">Shruti <span>AK</span></h1>
+  <p class="hero-sub">ECE Student · MCET · Batch 2027</p> <!--[cite: 1] -->
+  <h1 class="hero-name">Shruti <span>AK</span></h1> <!--[cite: 1] -->
 
   <div class="hero-typing">
     I am a <span class="typed-text" id="typedText"></span><span class="cursor-blink"></span>
@@ -279,22 +280,22 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
 
 <!-- MARQUEE -->
 <div class="marquee-wrap"><div class="marquee-track">
-  <span class="marquee-item">HTML</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">CSS</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">React.js</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Java</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Figma</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Frontend Dev</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">HTML</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">CSS</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">React.js</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Java</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Figma</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span>
-  <span class="marquee-item">Frontend Dev</span><span class="marquee-dot">✦</span>
+  <span class="marquee-item">HTML</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">CSS</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">PHP</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Java</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Figma</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Frontend Dev</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">HTML</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">CSS</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">MySQL</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Java</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Figma</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
+  <span class="marquee-item">Frontend Dev</span><span class="marquee-dot">✦</span> <!--[cite: 1] -->
 </div></div>
 
 <!-- ABOUT -->
@@ -313,15 +314,13 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
           <div class="photo-ring1"></div>
           <div class="photo-ring2"></div>
           <div class="photo-circle">
-          <img src="WhatsApp Image 2026-05-26 at 3.20.40 PM.jpeg" alt="Shruti AK">
-</div>
-  
+            <img src="myphoto.jpg.jpeg" alt="Shruti AK">
           </div>
         </div>
         <div class="photo-info">
-          <div><span class="pi-num">8.2</span><span class="pi-lbl">CGPA</span></div>
-          <div><span class="pi-num">3+</span><span class="pi-lbl">Projects</span></div>
-          <div><span class="pi-num">2</span><span class="pi-lbl">Internships</span></div>
+          <div><span class="pi-num">8.2</span><span class="pi-lbl">CGPA</span></div> <!--[cite: 1] -->
+          <div><span class="pi-num">3</span><span class="pi-lbl">Projects</span></div> <!--[cite: 1] -->
+          <div><span class="pi-num">2</span><span class="pi-lbl">Internships</span></div> <!--[cite: 1] -->
         </div>
       </div>
 
@@ -329,20 +328,20 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
       <div class="about-text reveal-right">
         <p class="about-greeting">Nice to meet you ✦</p>
         <h3 class="about-heading">Passionate about <em>building things</em> that matter</h3>
-        <p class="about-para">Aspiring software developer with a strong passion for Web Development — eager to build innovative and user-focused applications while continuously enhancing technical and analytical abilities.</p>
-        <p class="about-para">Currently pursuing B.E in ECE at MCET Pollachi, I love combining design thinking with code to create experiences that are both beautiful and functional.</p>
+        <p class="about-para">Aspiring software developer with a strong passion for Web Development — eager to build innovative and user-focused applications while continuously enhancing technical and analytical abilities.[cite: 1]</p>
+        <p class="about-para">Currently pursuing B.E in ECE at MCET Pollachi, I love combining design thinking with code to create experiences that are both beautiful and functional.[cite: 1]</p>
 
         <div class="interest-tags">
-          <span class="itag">🎨 UI/UX Design</span>
-          <span class="itag">🌐 Web Development</span>
-          <span class="itag">⚡ Frontend Dev</span>
+          <span class="itag">🎨 UI/UX Design</span> <!--[cite: 1] -->
+          <span class="itag">🌐 Web Development</span> <!--[cite: 1] -->
+          <span class="itag">⚡ Frontend Dev</span> <!--[cite: 1] -->
         </div>
 
         <div class="about-details">
-          <div><div class="ad-lbl">Email</div><div class="ad-val" style="font-size:.8rem">akshruti2006@gmail.com</div></div>
-          <div><div class="ad-lbl">Phone</div><div class="ad-val" style="font-size:.85rem">+91 9360537716</div></div>
-          <div><div class="ad-lbl">LinkedIn</div><div class="ad-val" style="font-size:.8rem">linkedin.com/Shruti-a-k</div></div>
-          <div><div class="ad-lbl">GitHub</div><div class="ad-val" style="font-size:.8rem">github.com/Shruti AK</div></div>
+          <div><div class="ad-lbl">Email</div><div class="ad-val" style="font-size:.8rem">akshruti2006@gmail.com</div></div> <!--[cite: 1] -->
+          <div><div class="ad-lbl">Phone</div><div class="ad-val" style="font-size:.85rem">+91 9360537716</div></div> <!--[cite: 1] -->
+          <div><div class="ad-lbl">LinkedIn</div><div class="ad-val" style="font-size:.8rem">linkedin.com/in/shrutiak781723</div></div> <!--[cite: 1] -->
+          <div><div class="ad-lbl">GitHub</div><div class="ad-val" style="font-size:.8rem">github.com/Shruti AK</div></div> <!--[cite: 1] -->
         </div>
       </div>
     </div>
@@ -360,26 +359,23 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
     <div class="skills-2col">
       <div class="reveal">
         <div class="skills-col-hd">Technical Skills</div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">HTML & CSS</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">JavaScript</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">React.js</span><span class="skill-pct">72%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Java</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Figma (UI/UX)</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">HTML & CSS</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">JavaScript</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">PHP</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Java & SQL</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Figma (UI/UX)</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div> <!--[cite: 1] -->
         <div class="tools-wrap">
           <div class="tools-lbl">Tools & Technologies</div>
           <div class="tools-tags">
-            <span class="t-tag">Figma</span><span class="t-tag">VS Code</span><span class="t-tag">React.js</span><span class="t-tag">GitHub</span><span class="t-tag">HTML5</span><span class="t-tag">CSS3</span>
+            <span class="t-tag">Figma</span><span class="t-tag">VS Code</span><span class="t-tag">GitHub</span><span class="t-tag">Xampp</span><span class="t-tag">HTML5</span><span class="t-tag">CSS3</span> <!--[cite: 1] -->
           </div>
         </div>
       </div>
       <div class="reveal d1">
         <div class="skills-col-hd">Soft Skills</div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Consistency & Patience</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Adaptability</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Teamwork</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Communication</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Problem Solving</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Creativity</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Time Management & Organization</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Leadership & Responsibility</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div> <!--[cite: 1] -->
+        <div class="skill-row"><div class="skill-top"><span class="skill-name-txt">Self Motivated</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div> <!--[cite: 1] -->
       </div>
     </div>
   </div>
@@ -398,23 +394,23 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
         <div class="proj-num">01</div>
         <div class="proj-cat">Frontend Development · SaaS</div>
         <div class="proj-title">MySkills+ E-Learning Platform</div>
-        <div class="proj-desc">Working as a Frontend Developer for MySkills+, an e-learning & SaaS platform for young individuals. Building responsive, engaging UI for an immersive learning experience.</div>
-        <div class="proj-tags"><span class="proj-tag">React.js</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span></div>
-        <div><span class="proj-badge">🟢 On Going</span></div>
+        <div class="proj-desc">Working as a Frontend Developer for MySkills+, developing responsive and user-friendly web interfaces for a SaaS-based digital platform.[cite: 1]</div>
+        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span></div> <!--[cite: 1] -->
+        <div><span class="proj-badge">🟢 On Going</span></div> <!--[cite: 1] -->
       </div>
       <div class="proj-card reveal-card d1">
         <div class="proj-num">02</div>
-        <div class="proj-cat">Website · Student Tool</div>
-        <div class="proj-title">AptitudePro Website</div>
-        <div class="proj-desc">An interactive aptitude learning platform designed to help students improve their problem-solving,logical reasoning,quantative aptitude,and placement preparation skills through a simple and user-friendly experiences.</div>
-        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JAVASCRIPT</span></div>
+        <div class="proj-cat">Web Application · Peer-to-Peer</div>
+        <div class="proj-title">SkillBridge Platform</div>
+        <div class="proj-desc">Developed a SkillBridge web application that enables students to exchange skills through a peer-to-peer learning platform.[cite: 1]</div>
+        <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span><span class="proj-tag">PHP</span></div> <!--[cite: 1] -->
       </div>
       <div class="proj-card reveal-card d2">
         <div class="proj-num">03</div>
         <div class="proj-cat">UI/UX · Design</div>
-        <div class="proj-title">CraveGo-Food Delivery Mobile App UI/UX Design</div>
-        <div class="proj-desc">Designed a modern and user-friendly food delivery mobile application prototype focused on seamless ordering ,easy navigation and attractive user experiences.</div>
-        <div class="proj-tags"><span class="proj-tag">Mobile</span><span class="proj-tag">UI Design</span><span class="proj-tag">Figma</span></div>
+        <div class="proj-title">Food Delivery App Prototype</div>
+        <div class="proj-desc">Designed an interactive Food Delivery App prototype with responsive and visually appealing user interfaces focusing on seamless ordering layouts.[cite: 1]</div>
+        <div class="proj-tags"><span class="proj-tag">Mobile</span><span class="proj-tag">UI Design</span><span class="proj-tag">Figma</span></div> <!--[cite: 1] -->
       </div>
     </div>
   </div>
@@ -431,19 +427,19 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
     <div class="timeline">
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <div class="tl-period">March 15 – April 15</div>
-        <div class="tl-role">UI/UX Design Intern</div>
-        <div class="tl-company">CODSOFT</div>
-        <div class="tl-desc">Designed sign-up flows, navigation menus and interactive components in Figma — gaining practical UI/UX skills through real-world design challenges. Focused on creating intuitive, accessible user interfaces.</div>
-        <div class="tl-skills"><span class="tl-skill">Figma</span><span class="tl-skill">UI Design</span><span class="tl-skill">User Flows</span><span class="tl-skill">Prototyping</span></div>
+        <div class="tl-period">15/03/2024 to 15/04/2024</div> <!--[cite: 1] -->
+        <div class="tl-role">Software Development Intern</div> <!--[cite: 1] -->
+        <div class="tl-company">CODSOFT</div> <!--[cite: 1] -->
+        <div class="tl-desc">Designed sign-up flows and navigation menus in Figma while gaining practical UI/UX skills through real-world design challenges.[cite: 1]</div>
+        <div class="tl-skills"><span class="tl-skill">Figma</span><span class="tl-skill">UI Design</span><span class="tl-skill">User Flows</span></div> <!--[cite: 1] -->
       </div>
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <div class="tl-period">June 6 – June 20</div>
-        <div class="tl-role">Web Development Intern</div>
-        <div class="tl-company">Web Development Program</div>
-        <div class="tl-desc">Assisted in developing and testing responsive web pages using HTML, CSS, and JavaScript. Gained hands-on team collaboration experience and practiced code review processes while building user-friendly interfaces.</div>
-        <div class="tl-skills"><span class="tl-skill">HTML</span><span class="tl-skill">CSS</span><span class="tl-skill">JavaScript</span><span class="tl-skill">Responsive Design</span><span class="tl-skill">Team Collab</span></div>
+        <div class="tl-period">06/06/2025 to 20/06/2025</div> <!--[cite: 1] -->
+        <div class="tl-role">Web Development Intern</div> <!--[cite: 1] -->
+        <div class="tl-company">Web Development Program</div> <!--[cite: 1] -->
+        <div class="tl-desc">Assisted in developing and testing responsive web pages using HTML, CSS, and JavaScript, while learning team collaboration.[cite: 1]</div>
+        <div class="tl-skills"><span class="tl-skill">HTML</span><span class="tl-skill">CSS</span><span class="tl-skill">JavaScript</span><span class="tl-skill">Responsive Design</span></div> <!--[cite: 1] -->
       </div>
     </div>
   </div>
@@ -458,14 +454,15 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
     <div class="resume-preview">
       <div class="resume-icon">📄</div>
       <div class="resume-meta">
-        <h3>Shruti AK — Resume</h3>
-        <p>Frontend Developer · UI/UX Designer</p>
-        <span>ECE · MCET · 2027</span>
+        <h3>Shruti AK — Resume</h3> <!--[cite: 1] -->
+        <p>Frontend Developer · UI/UX Designer</p> <!--[cite: 1] -->
+        <span>ECE · MCET · 2027</span> <!--[cite: 1] -->
       </div>
     </div>
     <div class="resume-actions">
-      <a href="727623BEC036pdf.pdf" download="Shruti_AK_Resume.pdf" class="btn-download">⬇ Download Resume</a>
-      <a href="727623BEC036pdf.pdf" target="_blank" class="btn-view">👁 View Resume</a>
+      <!-- FIXED PATH: Points to SHRUTI_AK_36.pdf directly -->
+      <a href="SHRUTI_AK_36.pdf" download="SHRUTI_AK_36.pdf" class="btn-download">⬇ Download Resume</a>
+      <a href="SHRUTI_AK_36.pdf" target="_blank" class="btn-view">👁 View Resume</a>
     </div>
   </div>
 </div>
@@ -474,17 +471,17 @@ footer{background:#1a0828;padding:1.8rem 5rem;display:flex;justify-content:space
 <div id="contact">
   <div class="c-label reveal">Let's Connect</div>
   <h2 class="c-title reveal">Got an idea?<br>Let's <em>build it together.</em></h2>
-  <a href="mailto:akshruti2006@gmail.com" class="c-email reveal">akshruti2006@gmail.com</a>
+  <a href="mailto:akshruti2006@gmail.com" class="c-email reveal">akshruti2006@gmail.com</a> <!--[cite: 1] -->
   <div class="c-socials reveal">
-    <a href="https://linkedin.com/in/Shruti-a-k" target="_blank" class="c-link">LinkedIn</a>
-    <a href="https://github.com/ShrutiAK" target="_blank" class="c-link">GitHub</a>
-    <a href="tel:+919360537716" class="c-link">+91 93605 37716</a>
+    <a href="https://linkedin.com/in/shrutiak781723" target="_blank" class="c-link">LinkedIn</a> <!--[cite: 1] -->
+    <a href="https://github.com/Shruti AK" target="_blank" class="c-link">GitHub</a> <!--[cite: 1] -->
+    <a href="tel:+919360537716" class="c-link">+91 93605 37716</a> <!--[cite: 1] -->
   </div>
 </div>
 
 <footer>
-  <span>© 2025 Shruti AK — All rights reserved</span>
-  <span>ECE · MCET · 2027</span>
+  <span>© 2026 Shruti AK — All rights reserved</span>
+  <span>ECE · MCET · 2027</span> <!--[cite: 1] -->
 </footer>
 
 <script>
@@ -504,37 +501,60 @@ document.addEventListener('mousemove',e=>{
 
 // ── Nav scroll ──
 window.addEventListener('scroll',()=>{
-  document.getElementById('navbar').classList.toggle('scrolled',scrollY>60);
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ── Typing animation ──
-const roles = ['Frontend Developer.','UI/UX Designer.','Responsive Web Designer.'];
-let rIdx=0, cIdx=0, deleting=false;
-const typedEl = document.getElementById('typedText');
-function type(){
-  const cur = roles[rIdx];
-  if(!deleting){
-    typedEl.textContent = cur.slice(0,++cIdx);
-    if(cIdx===cur.length){ deleting=true; setTimeout(type,1800); return; }
-  } else {
-    typedEl.textContent = cur.slice(0,--cIdx);
-    if(cIdx===0){ deleting=false; rIdx=(rIdx+1)%roles.length; setTimeout(type,400); return; }
-  }
-  setTimeout(type, deleting?60:90);
-}
-type();
-
-// ── Scroll reveal ──
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      e.target.querySelectorAll('.skill-fill').forEach(b=>b.classList.add('animate'));
-      obs.unobserve(e.target);
+// ── Reveal on Scroll ──
+const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-card');
+const revealOnScroll = () => {
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.classList.add('visible');
     }
   });
-},{threshold:0.1});
-document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-card,.tl-item').forEach(el=>obs.observe(el));
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+// ── Typing Effect ──
+const words = ["Frontend Developer.", "UI/UX Designer.", "Problem Solver."];
+let i = 0, timer;
+
+function typingEffect() {
+  let word = words[i].split("");
+  var loopTyping = function() {
+    if (word.length > 0) {
+      document.getElementById('typedText').innerHTML += word.shift();
+    } else {
+      setTimeout(deletingEffect, 2000);
+      return false;
+    }
+    timer = setTimeout(loopTyping, 100);
+  };
+  loopTyping();
+}
+
+function deletingEffect() {
+  let word = words[i].split("");
+  var loopDeleting = function() {
+    if (word.length > 0) {
+      word.pop();
+      document.getElementById('typedText').innerHTML = word.join("");
+    } else {
+      if (words.length > (i + 1)) {
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout(typingEffect, 500);
+      return false;
+    }
+    timer = setTimeout(loopDeleting, 60);
+  };
+  loopDeleting();
+}
+typingEffect();
 </script>
 </body>
 </html>
